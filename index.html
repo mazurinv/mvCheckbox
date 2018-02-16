@@ -1,0 +1,51 @@
+<div class="mvCheckbox" data-selected="true"></div>
+
+<div class="mvCheckbox"></div>
+
+<div class="mvCheckbox2" data-selected="true"></div>
+
+<div class="mvCheckbox2"></div>
+
+<div class="mvCheckbox3" data-selected="true"></div>
+
+<div class="mvCheckbox3"></div>
+
+<script type="text/javascript" src="mvCheckbox.js"></script>
+<script>
+    new mvCheckbox({
+        cssClass: 'mvCheckbox',
+        width: 40,
+        height: 40,
+        radius: 20,
+        innerRadius: 10,
+        padding: 10,
+        defaultColor: "#fbf9ff",
+        selectedColor: "#00618c",
+        background: "#00618c",
+        clicked: function (el, object) {
+            console.log(el, object.params.cssClass)
+        }
+    });
+
+    new mvCheckbox({
+        cssClass: 'mvCheckbox2',
+        width: 40,
+        height: 20,
+        radius: 10,
+        innerRadius: 1,
+        padding: 6,
+        defaultColor: "#ff8c87",
+        selectedColor: "#b6ffa4",
+        background: "#00618c"
+    });
+
+    new mvCheckbox({
+        cssClass: "mvCheckbox3",
+        background: "#aec1d3"
+    })
+</script>
+<style>
+    .mvCheckbox, .mvCheckbox2, .mvCheckbox3 {
+        margin: 5px;
+    }
+</style>
